@@ -3,9 +3,13 @@ import React from "react";
 import { Switch, Route, withRouter, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { ThemeProvider } from "styled-components";
+import { AppContainer } from "./style";
 
 import { theme } from "./theme";
 import { routes } from "./routes";
+
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export class App extends React.Component {
   render() {
@@ -19,7 +23,11 @@ export class App extends React.Component {
     ));
     return (
       <ThemeProvider theme={theme}>
-        <Switch>{pages}</Switch>
+        <AppContainer>
+          <Header />
+          <Switch>{pages}</Switch>
+          <Footer />
+        </AppContainer>
       </ThemeProvider>
     );
   }
