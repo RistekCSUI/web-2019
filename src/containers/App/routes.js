@@ -1,9 +1,8 @@
-import ReactStarter from "../../components/ReactStarter";
 import NotFoundPage from "../../components/NotFoundPage";
-
+import RistekWeb from "../../containers/RistekWeb";
 export const routes = [
   {
-    component: ReactStarter,
+    component: RistekWeb,
     exact: true,
     path: "/"
   },
