@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { MainInfoContainer } from "./style";
-import MissionImg from "../../assets/mission.svg";
-import VisionImg from "../../assets/vision.svg";
+import MissionImg from "../../assets/mission.jpg";
+import VisionImg from "../../assets/vision.jpg";
 import RistekLogo from "../../assets/ristek-logo-main.svg";
 
 const WHAT_IS_RISTEK =
