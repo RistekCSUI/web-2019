@@ -85,7 +85,7 @@ export const FooterContainer = styled.div`
     width: 11rem;
   }
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1580px) {
     .padding-container {
       padding: 6.5rem 3rem 2rem 3rem;
     }
@@ -133,7 +133,7 @@ export const FooterContainer = styled.div`
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1125px) {
     .contact h1 {
       font-size: 62px;
     }
