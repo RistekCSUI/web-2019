@@ -22,7 +22,7 @@ class Footer extends Component {
                 <div className="media-list">
                   <div>
                     <img className="social-icon" src={LineLogo} />
-                    <p>@rye2953f</p>
+                    <p>@ristekfasilkomui</p>
                   </div>
                   <div>
                     <img className="social-icon" src={TwitterLogo} />
