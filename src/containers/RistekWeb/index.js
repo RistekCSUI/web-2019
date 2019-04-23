@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import MainInfo from "../../components/MainInfo";
 import MainValues from "../../components/MainValues";
+import Achievement from "../../components/Achievement";
 
 class RistekWeb extends Component {
   render() {
@@ -8,6 +9,7 @@ class RistekWeb extends Component {
       <React.Fragment>
         <MainInfo />
         <MainValues />
+        <Achievement />
       </React.Fragment>
     );
   }
