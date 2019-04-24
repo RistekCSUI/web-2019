@@ -167,7 +167,7 @@ export const FooterContainer = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 848px) {
     .padding-container {
       padding: 6.5rem 3rem 3rem 3rem;
     }

@@ -137,7 +137,7 @@ export const MainValuesContainer = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 848px) {
     .imgContainer {
       flex-direction: column;
       justify-content: center;

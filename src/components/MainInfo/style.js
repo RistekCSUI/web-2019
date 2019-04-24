@@ -191,7 +191,7 @@ export const MainInfoContainer = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 936px) {
     p {
       line-height: 2.4rem;
     }
@@ -218,7 +218,7 @@ export const MainInfoContainer = styled.div`
     }
 
     .ristekImg {
-      width: 18rem;
+      width: 22rem;
     }
 
     .visionImg {
@@ -235,7 +235,7 @@ export const MainInfoContainer = styled.div`
       margin-bottom: 2rem;
     }
     .ristekLogo {
-      padding: 12rem;
+      padding: 16rem;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -249,6 +249,26 @@ export const MainInfoContainer = styled.div`
 
     .missionRow {
       margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 848px) {
+    .ristekImg {
+      width: 20rem;
+    }
+
+    .ristekLogo {
+      padding: 13rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ristekImg {
+      width: 19rem;
+    }
+
+    .ristekLogo {
+      padding: 11rem;
     }
   }
 
