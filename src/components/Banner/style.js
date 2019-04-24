@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import banner from "../../assets/main-pict.svg";
+import banner from "../../assets/main-pict.png";
 
 export const BannerContainer = styled.div`
   display: flex;
