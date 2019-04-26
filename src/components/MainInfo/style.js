@@ -11,13 +11,13 @@ export const MainInfoContainer = styled.div`
 
   h1 {
     color: ${props => props.theme.colors.primaryBlue};
-    font-size: 72px;
+    font-size: 60px;
     margin-bottom: 2rem;
   }
 
   p {
     color: ${props => props.theme.colors.black};
-    font-size: 32px;
+    font-size: 28px;
     line-height: 2.4rem;
   }
 
@@ -35,7 +35,7 @@ export const MainInfoContainer = styled.div`
 
   .ristekLogo {
     background: ${props => props.theme.colors.white};
-    padding: 11rem;
+    padding: 9rem;
     border-radius: 50%;
     margin-right: 2.5rem;
   }
@@ -49,15 +49,15 @@ export const MainInfoContainer = styled.div`
   }
 
   .ristekImg {
-    width: 24rem;
+    width: 18rem;
   }
 
   .visionImg {
-    width: 46rem;
+    width: 36rem;
   }
 
   .missionImg {
-    width: 48rem;
+    width: 38rem;
   }
 
   .descContainer {
@@ -84,26 +84,26 @@ export const MainInfoContainer = styled.div`
 
   @media (max-width: 1440px) {
     .ristekImg {
-      width: 20rem;
+      width: 16rem;
     }
 
     .visionImg {
-      width: 44rem;
+      width: 34rem;
     }
 
     .missionImg {
-      width: 44rem;
+      width: 36rem;
     }
     .ristekLogo {
       padding: 9rem;
     }
 
     h1 {
-      font-size: 64px;
+      font-size: 56px;
     }
 
     p {
-      font-size: 28px;
+      font-size: 24px;
     }
 
     .missionRow {
@@ -113,15 +113,15 @@ export const MainInfoContainer = styled.div`
 
   @media (max-width: 1360px) {
     .ristekImg {
-      width: 18rem;
+      width: 16rem;
     }
 
     .visionImg {
-      width: 36rem;
+      width: 32rem;
     }
 
     .missionImg {
-      width: 38rem;
+      width: 34rem;
     }
 
     .ristekLogo {
@@ -129,12 +129,11 @@ export const MainInfoContainer = styled.div`
     }
 
     h1 {
-      font-size: 56px;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.8rem;
     }
 
     p {
-      font-size: 26px;
+      font-size: 22px;
       line-height: 2.2rem;
     }
 
@@ -161,8 +160,7 @@ export const MainInfoContainer = styled.div`
     }
 
     h1 {
-      font-size: 44px;
-      margin-bottom: 1rem;
+      font-size: 48px;
     }
 
     p {
