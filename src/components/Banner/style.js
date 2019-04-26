@@ -7,6 +7,7 @@ export const BannerContainer = styled.div`
   background: url(${banner});
   background-origin: padding-box;
   background-size: cover;
+  padding-top: 4.5rem;
   border: 1.6rem solid white;
   flex-direction: column;
   position: relative;
