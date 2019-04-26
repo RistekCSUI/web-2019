@@ -225,6 +225,8 @@ export const DivisionSectionContainer = styled.div`
 
     .pi-cardlist-container {
       margin: 0;
+      padding-left: 0;
+      padding-right: 0;
       // flex-wrap: wrap;
 
       .card-container {
@@ -254,7 +256,6 @@ export const DivisionSectionContainer = styled.div`
       // flex-wrap: wrap;
 
       .group-card-container {
-        margin: 0;
         padding: 0 1rem;
         flex-basis: 100%;
 
@@ -272,6 +273,27 @@ export const DivisionSectionContainer = styled.div`
 
       .group-card-container: first-child {
         margin: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 472px) {
+    padding: 0 1rem;
+    padding-top: 3rem;
+
+    .pi-cardlist-container {
+      .card-container {
+        margin: 0.5rem;
+      }
+    }
+
+    .pi-card-list-container {
+      padding: 0;
+    }
+
+    .bph-cardlist-container {
+      .group-card-container {
+        padding: 0.5rem;
       }
     }
   }
