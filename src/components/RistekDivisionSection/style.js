@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const DivisionSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
+  padding-top: 5rem;
 
   .title-container {
     color: ${props => props.theme.colors.black};
@@ -43,7 +44,6 @@ export const DivisionSectionContainer = styled.div`
         p {
           margin: 1.5rem 0;
           font-size: 22px;
-          font-weight: lighter;
           color: ${props => props.theme.colors.black};
         }
       }
@@ -83,7 +83,6 @@ export const DivisionSectionContainer = styled.div`
         .group-list {
           color: ${props => props.theme.colors.black};
           font-size: 22px;
-          font-weight: lighter;
         }
       }
     }
@@ -241,7 +240,7 @@ export const DivisionSectionContainer = styled.div`
 
           p {
             margin: 0.5rem 0;
-            font-size: 12px;
+            font-size: 16px;
           }
         }
       }
@@ -256,16 +255,17 @@ export const DivisionSectionContainer = styled.div`
 
       .group-card-container {
         margin: 0;
+        padding: 0 1rem;
         flex-basis: 100%;
 
         .group-card-content {
           .group-card-title {
-            font-size: 16px;
+            font-size: 21px;
             line-height: 1.4;
           }
 
           .group-list {
-            font-size: 12px;
+            font-size: 16px;
           }
         }
       }
@@ -277,6 +277,7 @@ export const DivisionSectionContainer = styled.div`
   }
 
   @media only screen and (max-width: 425px) {
+
     .title-container {
       margin-bottom: 0;
 
@@ -307,7 +308,7 @@ export const DivisionSectionContainer = styled.div`
 
           p {
             margin: 0.5rem 0;
-            font-size: 12px;
+            font-size: 16px;
           }
         }
       }
@@ -331,7 +332,7 @@ export const DivisionSectionContainer = styled.div`
           }
 
           .group-list {
-            font-size: 14px;
+            font-size: 16px;
           }
         }
       }
@@ -373,7 +374,7 @@ export const DivisionSectionContainer = styled.div`
 
           p {
             margin: 0.5rem 0;
-            font-size: 10px;
+            font-size: 14px;
           }
         }
       }
@@ -397,7 +398,7 @@ export const DivisionSectionContainer = styled.div`
           }
 
           .group-list {
-            font-size: 12px;
+            font-size: 14px;
           }
         }
       }
