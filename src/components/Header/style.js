@@ -1,6 +1,15 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
+  position: fixed;
+  z-index: 999;
+  background: white;
+  width: 100%;
+
+  ${'' /* -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1); */}
+
   .header-container {
     padding: 1rem 1rem 1rem 2rem;
   }
