@@ -19,13 +19,13 @@ export const FooterContainer = styled.div`
   }
 
   .contact h1 {
-    font-size: 80px;
+    font-size: 72px;
   }
 
   .contact h2 {
     color: ${props => props.theme.colors.lightBlue};
     margin-top: 1rem;
-    font-size: 48px;
+    font-size: 44px;
   }
 
   .social-media {
@@ -34,11 +34,11 @@ export const FooterContainer = styled.div`
   }
 
   .social-media h2 {
-    font-size: 48px;
+    font-size: 44px;
   }
 
   .social-media p {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .media-list div {
@@ -57,7 +57,7 @@ export const FooterContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 12rem;
+    padding-top: 10rem;
   }
 
   .conquerlogo {
@@ -276,7 +276,7 @@ export const FooterContainer = styled.div`
 
   @media (max-width: 450px) {
     .padding-container {
-      padding: 4rem 2rem 2rem 2rem;
+      padding: 3rem 2rem 2rem 2rem;
     }
 
     .web-text p {
