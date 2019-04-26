@@ -277,9 +277,10 @@ export const DivisionSectionContainer = styled.div`
   }
 
   @media only screen and (max-width: 425px) {
-
+    padding: 0 1rem;
+    padding-top: 3rem;
     .title-container {
-      margin-bottom: 0;
+      margin-bottom: 1.5rem;
 
       .title {
         font-size: 38px;
@@ -294,6 +295,7 @@ export const DivisionSectionContainer = styled.div`
     .pi-cardlist-container {
       margin: 0;
       flex-wrap: wrap;
+      padding: 0;
 
       .card-container {
         flex-basis: 35%;
