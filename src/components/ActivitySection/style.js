@@ -79,7 +79,7 @@ export const ActivitySectionStyle = styled.div`
     }
   }
  
-   @media(min-width: 700px) and (max-width:1000px){
+  @media(min-width: 700px) and (max-width:1000px){
     .carousel{
       width:500px;
     }
@@ -90,7 +90,16 @@ export const ActivitySectionStyle = styled.div`
     }
   }
   
-     @media(max-width: 700px){
+  @media(max-width: 700px){
+    .button {
+      height: 32px;
+    }
+    .whole {
+      width: 100vw;
+      height: auto;
+      padding: 1rem 0 4.5rem 0;
+    }
+
     .topper-text-container{
       .text-wrapper{
         h1{
