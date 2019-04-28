@@ -101,6 +101,7 @@ export const BannerContainer = styled.div`
   }
 
   @media only screen and (max-width: 425px) {
+    border: 1rem solid white;
     .middle-content {
       margin-top: 5em;
 
