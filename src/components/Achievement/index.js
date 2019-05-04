@@ -5,15 +5,12 @@ import { INTERNS } from "./data_interns";
 import AchievementBox from "../AchievementBox";
 
 class Achievement extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <AchievementContainer>
         <div className="main">
           <div className="upper-title">
-            <h2>Ristek’s Achievements</h2>
+            <h1>Ristek’s Achievements</h1>
           </div>
 
           <div className="main-body">
