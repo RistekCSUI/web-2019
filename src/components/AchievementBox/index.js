@@ -3,12 +3,9 @@ import PropTypes from "prop-types";
 import { Box } from "./style";
 
 class AchievementBox extends React.Component {
-  constructor() {
-    super();
-  }
-
   render() {
     const { title, source } = this.props.data;
+
     return (
       <Box>
         <div className="body">

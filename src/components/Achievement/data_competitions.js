@@ -16,15 +16,12 @@ export const COMPETITIONS = [
     source: `./gemastik.svg`
   },
   {
-    title: "Hackathon Tempo Microsoft",
+    title: "Tempo-Microsoft Hackathon ",
     source: `./hackaton.svg`
   },
   {
     title: "ICPC Regional",
     source: `./icpsc.svg`
-  },
-  {
-    title: "Indonesia National Contest"
   },
   {
     title: "Imagine Cup",

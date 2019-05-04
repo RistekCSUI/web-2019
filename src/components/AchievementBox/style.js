@@ -12,6 +12,7 @@ export const Box = styled.div`
     padding: 10px;
     box-sizing: border-box;
     align-items: center;
+    margin: 0;
   }
 
   .image-box {
@@ -21,6 +22,7 @@ export const Box = styled.div`
     justify-content: center;
     align-items: center;
     display: flex;
+    padding: 1rem;
   }
 
   .image {
@@ -31,5 +33,37 @@ export const Box = styled.div`
   .title p {
     width: 100%;
     text-align: center;
+  }
+
+  div .body {
+    margin: 0 0;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .image-box {
+      width: 112px;
+      height: 94px;
+    }
+
+    div .title {
+      margin: 0;
+    }
+
+    .title p {
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .image-box {
+      width: 84px;
+      height: 71px;
+    }
+
+    .title p {
+      font-size: 9px;
+    }
   }
 `;
