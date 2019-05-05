@@ -25,7 +25,7 @@ export const AchievementContainer = styled.div`
   .lower-title {
     width: 70vw;
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .main-body {
@@ -55,7 +55,7 @@ export const AchievementContainer = styled.div`
     }
 
     .lower-title p {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 `;

@@ -13,29 +13,6 @@ class Header extends Component {
     };
   }
 
-  handleScroll = () => {
-    this.setState({
-      scroll: window.scrollY
-    });
-  };
-
-  componentDidMount() {
-    const el = document.querySelector(".header-container");
-    this.setState({
-      top: el.offsetTop,
-      height: el.offsetHeight
-    });
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
-  // componentDidUpdate() {
-  //   if (this.state.scroll > this.state.top) {
-  //     document.body.style.paddingTop = `${this.state.height}px`;
-  //   } else {
-  //     document.body.style.paddingTop = 0;
-  //   }
-  // }
-
   renderBurgerNavButton = () => (
     <div className="burger-container">
       <img
@@ -79,7 +56,7 @@ class Header extends Component {
             <h3>About</h3>
           </div>
           <div className="menu">
-            <h3>Partners</h3>
+            <h3>Partner</h3>
           </div>
           <div className="menu">
             <h3>Activities</h3>
@@ -111,7 +88,7 @@ class Header extends Component {
                 <p>About</p>
               </div>
               <div>
-                <p>Partners</p>
+                <p>Partner</p>
               </div>
               <div>
                 <p>Activities</p>
