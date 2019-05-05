@@ -5,6 +5,7 @@ import Achievement from "../../components/Achievement";
 import Banner from "../../components/Banner";
 import ActivitySection from "../../components/ActivitySection";
 import RistekDivisionSection from "../../components/RistekDivisionSection";
+import PartnerSection from "../../components/PartnerSection";
 
 class RistekWeb extends Component {
   render() {
@@ -16,6 +17,7 @@ class RistekWeb extends Component {
         <RistekDivisionSection />
         <ActivitySection />
         <Achievement />
+        <PartnerSection />
       </React.Fragment>
     );
   }
