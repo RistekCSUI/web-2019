@@ -43,7 +43,7 @@ export const PartnerSectionContainer = styled.div`
   }
 
   p {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 2.2rem;
   }
 
