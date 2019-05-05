@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { MainValuesContainer } from "./style";
-import MainValueOne from "../../assets/main-value-1.png";
-import MainValueTwo from "../../assets/main-value-2.png";
-import MainValueThree from "../../assets/main-value-3.png";
+import MainValueOne from "../../assets/main-value-1.jpg";
+import MainValueTwo from "../../assets/main-value-2.jpg";
+import MainValueThree from "../../assets/main-value-3.jpg";
 
 const VALUE_ONE = (
   <>
