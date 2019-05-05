@@ -7,8 +7,9 @@ const image_list = [
   "tech-talk",
   "open-class",
   "pekan-ristek",
-  "vision",
-  "vision"
+  "internal-class",
+  "ristek-visit",
+  "alumni-gath"
 ];
 
 class ActivitySection extends React.Component {
