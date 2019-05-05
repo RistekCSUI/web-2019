@@ -5,7 +5,7 @@ export const MainValuesContainer = styled.div`
 
   .container {
     background: black;
-    padding: 6rem 0 6rem 0;
+    padding: 4rem 0 6rem 0;
   }
 
   h1,
@@ -15,15 +15,15 @@ export const MainValuesContainer = styled.div`
   }
 
   h1 {
-    font-size: 72px;
+    font-size: 56px;
   }
 
   h2 {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   p {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 2.4rem;
   }
 
@@ -65,24 +65,9 @@ export const MainValuesContainer = styled.div`
     margin-bottom: 1rem;
   }
 
-  @media (max-width: 1440px) {
-    h1 {
-      font-size: 64px;
-    }
-
-    h2 {
-      font-size: 44px;
-    }
-
-    p {
-      font-size: 24px;
-      line-height: 2.2rem;
-    }
-  }
-
   @media (max-width: 1366px) {
     h1 {
-      font-size: 56px;
+      font-size: 50px;
     }
 
     h2 {
@@ -137,6 +122,25 @@ export const MainValuesContainer = styled.div`
     }
   }
 
+  @media (max-width: 942px) {
+    h1 {
+      font-size: 44px;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+    .valueDesc h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6rem;
+    }
+  }
+
   @media (max-width: 848px) {
     .imgContainer {
       flex-direction: column;
@@ -144,17 +148,16 @@ export const MainValuesContainer = styled.div`
     }
 
     h1 {
-      font-size: 64px;
+      font-size: 50px;
     }
 
     h2 {
-      font-size: 56px;
-      margin-bottom: 1.5rem;
+      font-size: 40px;
     }
 
     p {
-      font-size: 30px;
-      line-height: 2.2rem;
+      font-size: 24px;
+      line-height: 2.4rem;
     }
 
     .valueDesc {
