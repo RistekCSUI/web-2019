@@ -11,13 +11,13 @@ export const MainInfoContainer = styled.div`
 
   h1 {
     color: ${props => props.theme.colors.primaryBlue};
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 2rem;
   }
 
   p {
     color: ${props => props.theme.colors.black};
-    font-size: 28px;
+    font-size: 24px;
     line-height: 2.4rem;
   }
 
@@ -49,15 +49,15 @@ export const MainInfoContainer = styled.div`
   }
 
   .ristekImg {
-    width: 18rem;
+    width: 17rem;
   }
 
   .visionImg {
-    width: 36rem;
+    width: 34rem;
   }
 
   .missionImg {
-    width: 38rem;
+    width: 34rem;
   }
 
   .descContainer {
@@ -75,7 +75,7 @@ export const MainInfoContainer = styled.div`
   .missionRow {
     display: flex;
     flex-direction: row;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .missionNumber {
@@ -88,22 +88,22 @@ export const MainInfoContainer = styled.div`
     }
 
     .visionImg {
-      width: 34rem;
+      width: 32rem;
     }
 
     .missionImg {
-      width: 36rem;
+      width: 32rem;
     }
     .ristekLogo {
       padding: 9rem;
     }
 
     h1 {
-      font-size: 56px;
+      font-size: 48px;
     }
 
     p {
-      font-size: 24px;
+      font-size: 22px;
     }
 
     .missionRow {
@@ -117,11 +117,11 @@ export const MainInfoContainer = styled.div`
     }
 
     .visionImg {
-      width: 32rem;
+      width: 30rem;
     }
 
     .missionImg {
-      width: 34rem;
+      width: 30rem;
     }
 
     .ristekLogo {
@@ -133,7 +133,7 @@ export const MainInfoContainer = styled.div`
     }
 
     p {
-      font-size: 22px;
+      font-size: 20px;
       line-height: 2.2rem;
     }
 
@@ -152,7 +152,7 @@ export const MainInfoContainer = styled.div`
     }
 
     .missionImg {
-      width: 32rem;
+      width: 30rem;
     }
 
     .ristekLogo {
@@ -160,11 +160,11 @@ export const MainInfoContainer = styled.div`
     }
 
     h1 {
-      font-size: 48px;
+      font-size: 46px;
     }
 
     p {
-      font-size: 21px;
+      font-size: 18px;
       line-height: 2rem;
     }
 

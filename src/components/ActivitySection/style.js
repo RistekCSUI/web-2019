@@ -32,7 +32,7 @@ export const ActivitySectionStyle = styled.div`
 
     .text-wrapper {
       h1 {
-        font-size: 2.5em;
+        font-size: 50px;
         color: ${props => props.theme.colors.primaryBlue};
       }
     }
@@ -78,15 +78,24 @@ export const ActivitySectionStyle = styled.div`
       display:flex;
     }
   }
+
+
  
   @media(min-width: 700px) and (max-width:1000px){
     .carousel{
       width:500px;
     }
     .button {
-        width:40px;
-        height:40px;
-        background-size:contain;  
+      width:40px;
+      height:40px;
+      background-size:contain;  
+    }
+    .topper-text-container {
+      .text-wrapper {
+        h1 {
+          font-size: 40px;
+        }
+      }
     }
   }
   

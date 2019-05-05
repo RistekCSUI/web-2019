@@ -13,7 +13,7 @@ export const PartnerSectionContainer = styled.div`
 
   .title h1 {
     font-weight: bold;
-    font-size: 56px;
+    font-size: 50px;
     color: ${props => props.theme.colors.black};
   }
 
