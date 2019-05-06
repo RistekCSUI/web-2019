@@ -11,7 +11,7 @@ class Footer extends Component {
     return (
       <FooterContainer>
         <div className="footer-container">
-          <div className="padding-container">
+          <div className="padding-container" id="contact">
             <div className="upper">
               <div className="contact">
                 <h1>Contact us at</h1>

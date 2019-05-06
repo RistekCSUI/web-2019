@@ -13,7 +13,7 @@ class PartnerSection extends React.Component {
   render() {
     return (
       <PartnerSectionContainer>
-        <div className="section-container">
+        <div className="section-container" id={this.props.id}>
           <div className="title">
             <h1>About Our Partner</h1>
           </div>
