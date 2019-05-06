@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BannerContainer } from "./style";
 import ristekLogo from "../../assets/logo-ristek-2.svg";
 import conquerimg from "../../assets/conquertech.svg";
+import gojeklogo from "../../assets/gojek-white.png";
 import bentuk from "../../assets/bentuk2 lucu.svg";
 
 class Banner extends Component {
@@ -23,8 +24,37 @@ class Banner extends Component {
               alt="conquer tech"
             />
           </div>
+          <div className="gojek-wrap">
+            <p>
+              Official Learning Partner
+            </p>
+            <img
+              className="gojek-logo"
+              srcSet={`${gojeklogo}`}
+              alt="gojek logo"
+            />
+          </div>
           <div className="bentuk-wrap">
             <img className="bentuk" src={bentuk} alt="bentuk lucu" />
+          </div>
+        </div>
+        <div className="bot-content-mobile">
+          <div className="gojek-wrap">
+            <p>
+              Official Learning Partner
+            </p>
+            <img
+              className="gojek-logo"
+              srcSet={`${gojeklogo}`}
+              alt="gojek logo"
+            />
+          </div>
+          <div className="hashtag-wrap">
+            <img
+              className="hashtag"
+              srcSet={`${conquerimg}`}
+              alt="conquer tech"
+            />
           </div>
         </div>
       </BannerContainer>
