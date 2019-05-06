@@ -39,7 +39,7 @@ class MainInfo extends Component {
   render() {
     return (
       <MainInfoContainer>
-        <div className="container">
+        <div className="container" id={this.props.id}>
           <div className="rowFirst">
             <div className="ristekLogo">
               <img className="ristekImg" src={RistekLogo} />

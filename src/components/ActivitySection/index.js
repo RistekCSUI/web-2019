@@ -132,7 +132,7 @@ class ActivitySection extends React.Component {
 
     return (
       <ActivitySectionStyle>
-        <div className="flex column centerize whole bgWhite ">
+        <div className="flex column centerize whole bgWhite " id={this.props.id}>
           <div className="flex centerize maxWidth topper-text-container ">
             <div className="text-wrapper">
               {/* eslint-disable-next-line react/no-unescaped-entities */}

@@ -7,17 +7,18 @@ import ActivitySection from "../../components/ActivitySection";
 import RistekDivisionSection from "../../components/RistekDivisionSection";
 import PartnerSection from "../../components/PartnerSection";
 
+
 class RistekWeb extends Component {
   render() {
     return (
       <React.Fragment>
-        <Banner />
-        <MainInfo />
+        <Banner id="home" />
+        <MainInfo id="about" />
         <MainValues />
         <RistekDivisionSection />
-        <ActivitySection />
+        <ActivitySection id="activities" />
         <Achievement />
-        <PartnerSection />
+        <PartnerSection id="partner" />
       </React.Fragment>
     );
   }

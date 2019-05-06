@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { HeaderContainer } from "./style";
+import { Link, animateScroll as scroll } from "react-scroll";
 import RistekLogoSet from "../../assets/logoset-ristek.svg";
 import BurgerLogo from "../../assets/burger.svg";
 import MobileRistekLogo from "../../assets/logo-ristek-mobile.svg";
@@ -28,6 +29,10 @@ class Header extends Component {
     this.setState({ isExpandedMobile: !isExpandedMobile });
   }
 
+  closeNavMobile = () => {
+    this.setState({ isExpandedMobile: false });
+  }
+
   renderMenuMobile = () => {
     const isMobileMenuOpened = this.state.isExpandedMobile
       ? "mobile-menu-container"
@@ -49,21 +54,66 @@ class Header extends Component {
         </div>
 
         <div className="burger-menus">
-          <div className="menu">
-            <h3>Home</h3>
-          </div>
-          <div className="menu">
-            <h3>About</h3>
-          </div>
-          <div className="menu">
-            <h3>Partner</h3>
-          </div>
-          <div className="menu">
-            <h3>Activities</h3>
-          </div>
-          <div className="menu">
-            <h3>Contact</h3>
-          </div>
+          <Link
+            activeClass="active"
+            to="root"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1500}
+          >
+            <div className="menu" onClick={() => this.closeNavMobile()}>
+              <h3>Home</h3>
+            </div>
+          </Link>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1500}
+          >
+            <div className="menu" onClick={() => this.closeNavMobile()}>
+              <h3>About</h3>
+            </div>
+          </Link>
+          <Link
+            activeClass="active"
+            to="partner"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1500}
+          >
+            <div className="menu" onClick={() => this.closeNavMobile()}>
+              <h3>Partner</h3>
+            </div>
+          </Link>
+          <Link
+            activeClass="active"
+            to="activities"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1500}
+          >
+            <div className="menu" onClick={() => this.closeNavMobile()}>
+              <h3>Activities</h3>
+            </div>
+          </Link>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1500}
+          >
+            <div className="menu" onClick={() => this.closeNavMobile()}>
+              <h3>Contact</h3>
+            </div>
+          </Link>
         </div>
       </div>
     );
@@ -81,21 +131,66 @@ class Header extends Component {
               alt="ristek-logo"
             />
             <div className="header-menu">
-              <div>
-                <p>Home</p>
-              </div>
-              <div>
-                <p>About</p>
-              </div>
-              <div>
-                <p>Partner</p>
-              </div>
-              <div>
-                <p>Activities</p>
-              </div>
-              <div>
-                <p>Contact</p>
-              </div>
+              <Link
+                activeClass="active"
+                to="root"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1500}
+              >
+                <div>
+                  <p>Home</p>
+                </div>
+              </Link>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1500}
+              >
+                <div>
+                  <p>About</p>
+                </div>
+              </Link>
+              <Link
+                activeClass="active"
+                to="partner"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1500}
+              >
+                <div>
+                  <p>Partner</p>
+                </div>
+              </Link>
+              <Link
+                activeClass="active"
+                to="activities"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1500}
+              >
+                <div>
+                  <p>Activities</p>
+                </div>
+              </Link>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1500}
+              >
+                <div>
+                  <p>Contact</p>
+                </div>
+              </Link>
             </div>
             {this.renderBurgerNavButton()}
           </div>
