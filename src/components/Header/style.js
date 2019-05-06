@@ -188,4 +188,7 @@ export const HeaderContainer = styled.div`
       width: 91vw;
     }
   }
+
+  .burger-menus .menu h3 {
+  }
 `;
