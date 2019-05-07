@@ -41,7 +41,7 @@ class PartnerSection extends React.Component {
               <div className="upper-desc-container">
                 <img className="academy-logo" src={GoAcademy} />
                 <p className="text-desc">
-                  This year, Ristek has partnered up with GO-ACADEMY, GOJEK’s
+                  This year, Ristek has partnered up with GO-ACADEMY, Indonesia’s
                   leading talent incubator to nurture the interest and
                   innovation in technology of Fasilkom UI’s students. With this
                   partnership, Ristek wishes to unleash the limitless potential

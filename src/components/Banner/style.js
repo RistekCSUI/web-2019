@@ -130,6 +130,7 @@ export const BannerContainer = styled.div`
         bottom: 1rem;
         text-align: center;
         img {
+          margin-top: 2rem;
           width: 25%;
         }
       }
