@@ -20,7 +20,7 @@ export const ActivitySectionStyle = styled.div`
 
   .whole {
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
   }
 
   .maxWidth {
@@ -77,14 +77,21 @@ export const ActivitySectionStyle = styled.div`
       width:1500px;
       display:flex;
     }
+
+    .whole {
+      height: 80vh;
+    }
   }
-
-
  
   @media(min-width: 700px) and (max-width:1000px){
     .carousel{
       width:500px;
     }
+
+    .whole {
+      height: 80vh;
+    }
+
     .button {
       width:40px;
       height:40px;

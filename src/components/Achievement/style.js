@@ -47,6 +47,7 @@ export const AchievementContainer = styled.div`
   @media only screen and (max-width: 1024px) {
     .main {
       margin: 2rem 0;
+      margin-top: 4rem;
       padding: 0;
     }
 
