@@ -147,6 +147,10 @@ export const MainValuesContainer = styled.div`
       justify-content: center;
     }
 
+    .padder {
+      display: none;
+    }
+
     h1 {
       font-size: 50px;
     }
