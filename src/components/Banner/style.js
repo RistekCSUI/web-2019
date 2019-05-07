@@ -189,6 +189,7 @@ export const BannerContainer = styled.div`
 
       .hashtag-wrap {
         img {
+          margin-top: 1.5rem;
           width: 40%;
         }
       }
