@@ -30,20 +30,16 @@ class Header extends Component {
 
   toggleExpandMobile() {
     const { isExpandedMobile } = this.state;
-    this.toggleScroll(isExpandedMobile);
+    this.toggleScroll(!isExpandedMobile);
     this.setState({ isExpandedMobile: !isExpandedMobile });
   }
 
   toggleScroll = currentState => {
-    if (!currentState) {
+    if (currentState) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
-  };
-
-  closeNavMobile = () => {
-    this.setState({ isExpandedMobile: false });
   };
 
   renderMenuMobile = () => {
@@ -75,7 +71,7 @@ class Header extends Component {
             offset={-70}
             duration={1500}
           >
-            <div className="menu" onClick={() => this.closeNavMobile()}>
+            <div className="menu" onClick={() => this.toggleExpandMobile()}>
               <h3>Home</h3>
             </div>
           </Link>
@@ -87,7 +83,7 @@ class Header extends Component {
             offset={-70}
             duration={1500}
           >
-            <div className="menu" onClick={() => this.closeNavMobile()}>
+            <div className="menu" onClick={() => this.toggleExpandMobile()}>
               <h3>About</h3>
             </div>
           </Link>
@@ -99,7 +95,7 @@ class Header extends Component {
             offset={-70}
             duration={1500}
           >
-            <div className="menu" onClick={() => this.closeNavMobile()}>
+            <div className="menu" onClick={() => this.toggleExpandMobile()}>
               <h3>Partner</h3>
             </div>
           </Link>
@@ -111,7 +107,7 @@ class Header extends Component {
             offset={-70}
             duration={1500}
           >
-            <div className="menu" onClick={() => this.closeNavMobile()}>
+            <div className="menu" onClick={() => this.toggleExpandMobile()}>
               <h3>Activities</h3>
             </div>
           </Link>
@@ -123,7 +119,7 @@ class Header extends Component {
             offset={-70}
             duration={1500}
           >
-            <div className="menu" onClick={() => this.closeNavMobile()}>
+            <div className="menu" onClick={() => this.toggleExpandMobile()}>
               <h3>Contact</h3>
             </div>
           </Link>
