@@ -23,8 +23,8 @@ class Achievement extends Component {
               </p>
             </div>
             <div className="content">
-              {COMPETITIONS.map((res, index) => (
-                <AchievementBox key={index} data={res} />
+              {COMPETITIONS.map((res, idx) => (
+                <AchievementBox data={res} key={`${res}-${idx}`} />
               ))}
             </div>
           </div>
@@ -37,8 +37,8 @@ class Achievement extends Component {
               </p>
             </div>
             <div className="content">
-              {INTERNS.map((res, index) => (
-                <AchievementBox key={index} data={res} />
+              {INTERNS.map((res, idx) => (
+                <AchievementBox data={res} key={`${res}-${idx}`} />
               ))}
             </div>
           </div>
