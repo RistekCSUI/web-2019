@@ -7,7 +7,6 @@ import ActivitySection from "../../components/ActivitySection";
 import RistekDivisionSection from "../../components/RistekDivisionSection";
 import PartnerSection from "../../components/PartnerSection";
 
-
 class RistekWeb extends Component {
   render() {
     return (

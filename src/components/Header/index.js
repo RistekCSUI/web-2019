@@ -6,6 +6,10 @@ import BurgerLogo from "../../assets/burger.svg";
 import MobileRistekLogo from "../../assets/logo-ristek-mobile.svg";
 import CloseIcon from "../../assets/close.svg";
 
+import RistekLogoSetThumb from "../../assets/logoset-ristek-thumb.png";
+
+import ProgressiveImage from "../ProgressiveImage";
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -31,7 +35,7 @@ class Header extends Component {
 
   closeNavMobile = () => {
     this.setState({ isExpandedMobile: false });
-  }
+  };
 
   renderMenuMobile = () => {
     const isMobileMenuOpened = this.state.isExpandedMobile
@@ -125,10 +129,11 @@ class Header extends Component {
         {this.renderMenuMobile()}
         <div className="header-container">
           <div className="header-logo">
-            <img
-              className="ristek-logo-img"
-              src={RistekLogoSet}
-              alt="ristek-logo"
+            <ProgressiveImage
+              cName="ristek-logo-img"
+              preview={RistekLogoSetThumb}
+              image={RistekLogoSet}
+              alt="Ristek Header Logo"
             />
             <div className="header-menu">
               <Link
