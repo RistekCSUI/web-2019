@@ -22,10 +22,18 @@ export const FooterContainer = styled.div`
     font-size: 72px;
   }
 
-  .contact h2 {
+  a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+  }
+
+  .contact a {
+    font-weight: 700;
     color: ${props => props.theme.colors.lightBlue};
     margin-top: 1rem;
     font-size: 44px;
+    cursor: pointer;
   }
 
   .social-media {
@@ -37,7 +45,7 @@ export const FooterContainer = styled.div`
     font-size: 44px;
   }
 
-  .social-media p {
+  .social-media a {
     font-size: 26px;
   }
 
@@ -47,8 +55,11 @@ export const FooterContainer = styled.div`
     align-items: center;
     margin-top: 1rem;
   }
+  .media-list .clickable {
+    cursor: pointer;
+  }
 
-  .media-list p {
+  .media-list a {
     margin-left: 1.2rem;
   }
 
@@ -74,7 +85,8 @@ export const FooterContainer = styled.div`
     text-align: right;
   }
 
-  .web-text p {
+  .web-text a {
+    cursor: pointer;
     font-size: 20px;
     font-weight: bold;
     line-height: 1.5rem;
@@ -83,6 +95,23 @@ export const FooterContainer = styled.div`
   .white-logoset {
     margin-left: 1.5rem;
     width: 11rem;
+  }
+
+  .link-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media-list .clickable:hover {
+    text-decoration: underline;
+  }
+
+  .web-text a:hover {
+    text-decoration: underline;
+  }
+
+  .contact a:hover {
+    text-decoration: underline;
   }
 
   @media (max-width: 1580px) {
@@ -102,7 +131,7 @@ export const FooterContainer = styled.div`
       font-size: 72px;
     }
 
-    .contact h2 {
+    .contact a {
       font-size: 36px;
     }
 
@@ -110,7 +139,7 @@ export const FooterContainer = styled.div`
       font-size: 36px;
     }
 
-    .web-text p {
+    .web-text a {
       font-size: 18px;
     }
 
@@ -138,7 +167,7 @@ export const FooterContainer = styled.div`
       font-size: 62px;
     }
 
-    .contact h2 {
+    .contact a {
       font-size: 30px;
     }
 
@@ -154,11 +183,11 @@ export const FooterContainer = styled.div`
       width: 8rem;
     }
 
-    .social-media p {
+    .social-media a {
       font-size: 22px;
     }
 
-    .web-text p {
+    .web-text a {
       font-size: 16px;
     }
 
@@ -169,7 +198,7 @@ export const FooterContainer = styled.div`
 
   @media (max-width: 848px) {
     .padding-container {
-      padding: 6.5rem 3rem 3rem 3rem;
+      padding: 5rem 3rem 3rem 3rem;
     }
 
     .upper {
@@ -180,12 +209,12 @@ export const FooterContainer = styled.div`
       padding-top: 4rem;
     }
 
-    .contact h2 {
+    .contact a {
       font-size: 42px;
     }
 
     .social-media h2 {
-      font-size: 42px;
+      font-size: 36px;
     }
 
     .white-logoset {
@@ -204,10 +233,6 @@ export const FooterContainer = styled.div`
     .contact {
       padding-bottom: 2.5rem;
     }
-
-    .social-media h2 {
-      margin-bottom: 1rem;
-    }
   }
 
   @media (max-width: 600px) {
@@ -215,7 +240,7 @@ export const FooterContainer = styled.div`
       font-size: 56px;
     }
 
-    .contact h2 {
+    .contact a {
       font-size: 36px;
     }
 
@@ -231,11 +256,11 @@ export const FooterContainer = styled.div`
       width: 7rem;
     }
 
-    .social-media p {
+    .social-media a {
       font-size: 20px;
     }
 
-    .web-text p {
+    .web-text a {
       font-size: 15px;
     }
 
@@ -253,7 +278,7 @@ export const FooterContainer = styled.div`
       font-size: 48px;
     }
 
-    .contact h2 {
+    .contact a {
       font-size: 28px;
     }
 
@@ -269,7 +294,7 @@ export const FooterContainer = styled.div`
       width: 6rem;
     }
 
-    .web-text p {
+    .web-text a {
       font-size: 12px;
     }
   }
@@ -279,7 +304,7 @@ export const FooterContainer = styled.div`
       padding: 3rem 2rem 2rem 2rem;
     }
 
-    .web-text p {
+    .web-text a {
       display: none;
     }
 
@@ -291,7 +316,7 @@ export const FooterContainer = styled.div`
       font-size: 40px;
     }
 
-    .contact h2 {
+    .contact a {
       font-size: 22px;
       margin-top: 0.5;
     }
@@ -300,7 +325,7 @@ export const FooterContainer = styled.div`
       font-size: 22px;
     }
 
-    .social-media p {
+    .social-media a {
       font-size: 18px;
     }
 
