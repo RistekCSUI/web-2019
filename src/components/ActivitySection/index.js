@@ -132,7 +132,10 @@ class ActivitySection extends React.Component {
 
     return (
       <ActivitySectionStyle>
-        <div className="flex column centerize whole bgWhite " id={this.props.id}>
+        <div
+          className="flex column centerize whole bgWhite "
+          id={this.props.id}
+        >
           <div className="flex centerize maxWidth topper-text-container ">
             <div className="text-wrapper">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
@@ -151,11 +154,11 @@ class ActivitySection extends React.Component {
                     transform: `translateX(-${this.calculateMovement()}px)`
                   }}
                 >
-                  {image_list.map(image => (
+                  {image_list.map((image, index) => (
                     <ActivityCard
                       image={images[`${image}.jpg`]}
                       title={image.replace(/[^a-zA-Z ]/g, " ")}
-                      key={{ image }}
+                      key={index}
                     />
                   ))}
                 </div>

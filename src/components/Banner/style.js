@@ -36,8 +36,8 @@ export const BannerContainer = styled.div`
     }
   }
 
-
-  .bot-content, .bot-content-mobile {
+  .bot-content,
+  .bot-content-mobile {
     height: 20%;
     width: 100%;
     display: flex;
@@ -203,7 +203,6 @@ export const BannerContainer = styled.div`
         }
       }
     }
-
 
     border: 1rem solid white;
     .middle-content {
