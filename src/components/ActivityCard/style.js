@@ -24,11 +24,6 @@ export const ActivityCardStyle = styled.div`
       background: ${props =>
         `url(${props.background}) no-repeat center center`};
       background-size: cover;
-      -webkit-filter: brightness(100%);
-      -moz-filter: brightness(100%);
-      -o-filter: brightness(100%);
-      -ms-filter: brightness(100%);
-      filter: brightness(100%);
     }
     .activity-title {
       width: 100%;
@@ -56,7 +51,15 @@ export const ActivityCardStyle = styled.div`
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1150px) {
+    .image-container {
+      -webkit-filter: brightness(100%);
+      -moz-filter: brightness(100%);
+      -o-filter: brightness(100%);
+      -ms-filter: brightness(100%);
+      filter: brightness(100%);
+    }
+
     .image-container:hover {
       -webkit-filter: brightness(40%);
       -moz-filter: brightness(40%);
