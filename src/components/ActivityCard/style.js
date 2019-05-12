@@ -24,13 +24,54 @@ export const ActivityCardStyle = styled.div`
       background: ${props =>
         `url(${props.background}) no-repeat center center`};
       background-size: cover;
+      -webkit-filter: brightness(100%);
+      -moz-filter: brightness(100%);
+      -o-filter: brightness(100%);
+      -ms-filter: brightness(100%);
+      filter: brightness(100%);
     }
     .activity-title {
       width: 100%;
       h3 {
+        font-size: 21px;
         padding: 0;
         margin: 4px 0;
         text-transform: capitalize;
+      }
+    }
+    .detail-button {
+      cursor: pointer;
+      p {
+        font-weight: 700;
+        font-size: 25px;
+        color: white;
+      }
+
+      border-style: solid;
+      border-width: 4px;
+      border-color: white;
+      display: none;
+      padding: 0.5rem 2.5rem;
+      z-index: 2;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .image-container:hover {
+      -webkit-filter: brightness(40%);
+      -moz-filter: brightness(40%);
+      -o-filter: brightness(40%);
+      -ms-filter: brightness(40%);
+      filter: brightness(40%);
+      transition: 0.8s;
+
+      .detail-button {
+        display: inline-block;
+        -webkit-filter: brightness(100%);
+        -moz-filter: brightness(100%);
+        -o-filter: brightness(100%);
+        -ms-filter: brightness(100%);
+        filter: brightness(100%);
       }
     }
   }
@@ -79,6 +120,14 @@ export const ActivityCardStyle = styled.div`
           margin-top: 1rem;
           font-size: 1.5rem;
         }
+      }
+      .detail-button {
+        p {
+          font-size: 18px;
+        }
+
+        border-width: 3px;
+        padding: 0.5rem 2.5rem;
       }
     }
   }

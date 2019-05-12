@@ -182,7 +182,7 @@ export const BannerContainer = styled.div`
   }
 
   @media only screen and (max-width: 425px) {
-    height: 85vh;
+    height: -webkit-fill-available;
     .bot-content-mobile {
       position: absolute;
       bottom: 0rem;
@@ -226,6 +226,19 @@ export const BannerContainer = styled.div`
       }
       .bentuk-wrap {
         width: 30%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .middle-content {
+      margin-top: 3em;
+    }
+    .bot-content-mobile {
+      .hashtag-wrap {
+        img {
+          margin-top: 0.5rem;
+        }
       }
     }
   }
