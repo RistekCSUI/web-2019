@@ -102,16 +102,18 @@ export const FooterContainer = styled.div`
     flex-direction: column;
   }
 
-  .media-list .clickable:hover {
-    text-decoration: underline;
-  }
+  @media (min-width: 848px) {
+    .media-list .clickable:hover {
+      text-decoration: underline;
+    }
 
-  .web-text a:hover {
-    text-decoration: underline;
-  }
+    .web-text a:hover {
+      text-decoration: underline;
+    }
 
-  .contact a:hover {
-    text-decoration: underline;
+    .contact a:hover {
+      text-decoration: underline;
+    }
   }
 
   @media (max-width: 1580px) {
