@@ -3,6 +3,11 @@ import { MainInfoContainer } from "./style";
 import MissionImg from "../../assets/mission.jpg";
 import VisionImg from "../../assets/vision.jpg";
 import RistekLogo from "../../assets/ristek-logo-main.svg";
+import visionThumb from "../../assets/vision-thumb.jpg";
+import misionThumb from "../../assets/mission-thumb.jpg";
+import RistekThumb from "../../assets/ristek-logo-main-thumb.png";
+
+import ProgressiveImage from "../ProgressiveImage";
 
 const WHAT_IS_RISTEK =
   "RISTEK is an independent organization in Faculty of Computer Science, University of Indonesia that aims to foster students' interests and talent in technology.";
@@ -42,7 +47,12 @@ class MainInfo extends Component {
         <div className="container" id={this.props.id}>
           <div className="rowFirst">
             <div className="ristekLogo">
-              <img className="ristekImg" src={RistekLogo} />
+              <ProgressiveImage
+                cName="ristekImg"
+                preview={RistekThumb}
+                image={RistekLogo}
+                alt="Ristek Conquer Tech"
+              />
             </div>
             <div className="descContainer">
               <div className="descStyle">
@@ -63,12 +73,22 @@ class MainInfo extends Component {
               </div>
             </div>
             <div className="visionPict">
-              <img className="visionImg" src={VisionImg} />
+              <ProgressiveImage
+                cName="visionImg"
+                preview={visionThumb}
+                image={VisionImg}
+                alt="vision image"
+              />
             </div>
           </div>
           <div className="rowVisionMobile">
             <div className="visionPict">
-              <img className="visionImg" src={VisionImg} />
+              <ProgressiveImage
+                cName="visionImg"
+                preview={visionThumb}
+                image={VisionImg}
+                alt="vision image"
+              />
             </div>
             <div className="descContainer">
               <div className="descStyle">
@@ -81,7 +101,12 @@ class MainInfo extends Component {
           </div>
           <div className="rowMission">
             <div className="missionPict">
-              <img className="missionImg" src={MissionImg} />
+              <ProgressiveImage
+                cName="missionImg"
+                preview={misionThumb}
+                image={MissionImg}
+                alt="mission image"
+              />
             </div>
             <div className="descContainer">
               <div className="descStyle">

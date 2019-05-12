@@ -4,6 +4,12 @@ import MainValueOne from "../../assets/main-value-1.jpg";
 import MainValueTwo from "../../assets/main-value-2.jpg";
 import MainValueThree from "../../assets/main-value-3.jpg";
 
+import mainValueOneThumb from "../../assets/main-value-1-thumb.jpg";
+import mainValueTwoThumb from "../../assets/main-value-2-thumb.jpg";
+import mainValueThreeThumb from "../../assets/main-value-3-thumb.jpg";
+
+import ProgressiveImage from "../ProgressiveImage";
+
 const VALUE_ONE = (
   <>
     <p>
@@ -54,14 +60,24 @@ class MainValues extends Component {
                 <h2>Learning</h2>
                 {VALUE_ONE}
               </div>
-              <img className="valueImg" src={MainValueOne} />
+              <ProgressiveImage
+                cName="valueImg"
+                preview={mainValueOneThumb}
+                image={MainValueOne}
+                alt="main value 1"
+              />
             </div>
             <div className="valueImgDiv">
               <div className="valueDesc">
                 <h2>Professionalism</h2>
                 {VALUE_TWO}
               </div>
-              <img className="valueImg" src={MainValueTwo} />
+              <ProgressiveImage
+                cName="valueImg"
+                preview={mainValueTwoThumb}
+                image={MainValueTwo}
+                alt="main value 2"
+              />
             </div>
             <div className="valueImgDiv">
               <div className="valueDesc">
@@ -69,7 +85,12 @@ class MainValues extends Component {
                 {VALUE_THREE}
                 <div className="padder" />
               </div>
-              <img className="valueImg" src={MainValueThree} />
+              <ProgressiveImage
+                cName="valueImg"
+                preview={mainValueThreeThumb}
+                image={MainValueThree}
+                alt="main value 3"
+              />
             </div>
           </div>
         </div>
