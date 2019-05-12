@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Box } from "./style";
+import Img from "react-image";
+import Spinner from "../Spinner";
 
 class AchievementBox extends React.Component {
   render() {
@@ -10,7 +12,14 @@ class AchievementBox extends React.Component {
       <Box>
         <div className="body">
           <div className="image-box">
-            {source && <img className="image" src={require(`${source}`)} />}
+            {source && (
+              <Img
+                className="image"
+                src={require(`${source}`)}
+                loader={<Spinner />}
+                alt="Achievement Image"
+              />
+            )}
           </div>
           <div className="title">
             <p>{title}</p>

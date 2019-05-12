@@ -5,12 +5,21 @@ import conquerimg from "../../assets/conquertech.svg";
 import gojeklogo from "../../assets/gojek-white.png";
 import bentuk from "../../assets/bentuk2 lucu.svg";
 
+import ristekLogoThumb from "../../assets/logo-ristek-2-thumb.png";
+
+import ProgressiveImage from "../ProgressiveImage";
+
 class Banner extends Component {
   render() {
     return (
       <BannerContainer>
         <div className="middle-content">
-          <img className="ristek-logo" src={ristekLogo} alt="logo ristek" />
+          <ProgressiveImage
+            cName="ristek-logo"
+            preview={ristekLogoThumb}
+            image={ristekLogo}
+            alt="Ristek Logo"
+          />
           <div className="ristek-caption">
             <p className="top-caption">RISET DAN TEKNOLOGI</p>
             <p className="bot-caption">FAKULTAS ILMU KOMPUTER, UI</p>
@@ -25,9 +34,7 @@ class Banner extends Component {
             />
           </div>
           <div className="gojek-wrap">
-            <p>
-              Official Learning Partner
-            </p>
+            <p>Official Learning Partner</p>
             <img
               className="gojek-logo"
               srcSet={`${gojeklogo}`}
@@ -40,9 +47,7 @@ class Banner extends Component {
         </div>
         <div className="bot-content-mobile">
           <div className="gojek-wrap">
-            <p>
-              Official Learning Partner
-            </p>
+            <p>Official Learning Partner</p>
             <img
               className="gojek-logo"
               srcSet={`${gojeklogo}`}

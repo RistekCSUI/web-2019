@@ -44,6 +44,7 @@ export const MainValuesContainer = styled.div`
   }
 
   .valueImgDiv {
+    width: 100%;
     margin: 2rem;
     position: relative;
   }
@@ -142,6 +143,9 @@ export const MainValuesContainer = styled.div`
   }
 
   @media (max-width: 848px) {
+    .valueImgDiv {
+      width: initial;
+    }
     .imgContainer {
       flex-direction: column;
       justify-content: center;
