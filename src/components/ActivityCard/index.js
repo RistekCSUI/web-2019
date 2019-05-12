@@ -7,8 +7,15 @@ class ActivityCard extends React.Component {
     return (
       <ActivityCardStyle background={this.props.image}>
         <div className="flex centerize column card-container">
-          <div className="image-container" />
-          <div className="flex start activity-title ">
+          <div className="flex centerize image-container">
+            <div
+              className="detail-button"
+              onClick={() => this.props.onClickCard()}
+            >
+              <p>More detail</p>
+            </div>
+          </div>
+          <div className="flex centerize activity-title ">
             <h3>{this.props.title}</h3>
           </div>
         </div>
@@ -19,7 +26,8 @@ class ActivityCard extends React.Component {
 
 ActivityCard.propTypes = {
   image: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
+  onClickCard: PropTypes.func
 };
 
 export default ActivityCard;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { HeaderContainer } from "./style";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import RistekLogoSet from "../../assets/logoset-ristek.svg";
 import BurgerLogo from "../../assets/burger.svg";
 import MobileRistekLogo from "../../assets/logo-ristek-mobile.svg";
@@ -30,8 +30,17 @@ class Header extends Component {
 
   toggleExpandMobile() {
     const { isExpandedMobile } = this.state;
+    this.toggleScroll(isExpandedMobile);
     this.setState({ isExpandedMobile: !isExpandedMobile });
   }
+
+  toggleScroll = currentState => {
+    if (!currentState) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  };
 
   closeNavMobile = () => {
     this.setState({ isExpandedMobile: false });

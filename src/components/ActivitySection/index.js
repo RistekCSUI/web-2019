@@ -1,8 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 import ActivityCard from "../../components/ActivityCard";
+import ActivityModal from "../../components/ActivityModal";
 import { ActivitySectionStyle } from "./style";
+import { descriptionMap } from "./data";
 
-const image_list = [
+const imageList = [
   // image should be >=3
   "tech-talk",
   "open-class",
@@ -19,10 +22,12 @@ class ActivitySection extends React.Component {
       temporary_index: 0,
       card_index: 0,
       screen_width: 0,
-      image_number: image_list.length,
+      image_number: imageList.length,
       multiplier: 0,
       max_movement: 0,
-      ticker: true
+      ticker: true,
+      activityModal: false,
+      activeContent: 0
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
@@ -38,11 +43,94 @@ class ActivitySection extends React.Component {
     clearInterval(this.interval);
   }
 
+  getActiveContentModal = () => {
+    const currentActiveContent = this.state.activeContent;
+    const images = this.importAll(
+      require.context("../../assets/", false, /\.(png|jpe?g|svg)$/)
+    );
+
+    return (
+      <ActivityModal
+        image={images[`${currentActiveContent}.jpg`]}
+        title={this.getTitleTextFromImage(currentActiveContent)}
+        desc={this.getDescTextFromImage(currentActiveContent)}
+        onMoveModal={this.handleMoveActivityModal}
+        onClose={this.handleCloseActivityModal}
+      />
+    );
+  };
+
+  handleClickActivityCard = imageFile => {
+    const currentState = this.state.activityModal;
+    this.setActiveModal(imageFile);
+    this.toggleActivityModal(currentState);
+    this.toggleScroll(currentState);
+  };
+
+  handleMoveActivityModal = increment => {
+    // 1 : Next
+    // -1 : Previous
+    const currentActiveContent = this.state.activeContent;
+    let imgActiveIndex = imageList.indexOf(currentActiveContent);
+    imgActiveIndex += increment;
+    const newActiveIndex = this.handleRotationArray(imageList, imgActiveIndex);
+
+    this.setState({
+      activeContent: imageList[newActiveIndex]
+    });
+  };
+
+  handleCloseActivityModal = () => {
+    const currentState = this.state.activityModal;
+    this.toggleActivityModal(currentState);
+    this.toggleScroll(currentState);
+  };
+
+  toggleScroll = currentState => {
+    if (!currentState) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  };
+
+  toggleActivityModal = currentState => {
+    this.setState({
+      activityModal: !currentState
+    });
+  };
+
+  handleRotationArray = (arr, idx) => {
+    const size = arr.length;
+
+    if (idx < 0) {
+      return size - 1;
+    } else if (idx >= size) {
+      return 0;
+    }
+
+    return idx;
+  };
+
+  setActiveModal = content => {
+    this.setState({
+      activeContent: content
+    });
+  };
+
+  getDescTextFromImage = content => {
+    return descriptionMap[content];
+  };
+
+  getTitleTextFromImage = imgName => {
+    const res = imgName.toString().replace(/[^a-zA-Z ]/g, " ");
+
+    return res;
+  };
+
   importAll = files => {
     const images = {};
-    files.keys().map(item => {
-      images[item.replace("./", "")] = files(item);
-    });
+    files.keys().map(item => (images[item.replace("./", "")] = files(item)));
 
     return images;
   };
@@ -126,12 +214,18 @@ class ActivitySection extends React.Component {
   };
 
   render() {
+    const imageIdx = this.state.temporary_index;
+    const currentImg = imageList[imageIdx];
     const images = this.importAll(
       require.context("../../assets/", false, /\.(png|jpe?g|svg)$/)
     );
+    const activityModal = this.state.activityModal
+      ? this.getActiveContentModal()
+      : null;
 
     return (
       <ActivitySectionStyle>
+        {activityModal}
         <div
           className="flex column centerize whole bgWhite "
           id={this.props.id}
@@ -154,13 +248,22 @@ class ActivitySection extends React.Component {
                     transform: `translateX(-${this.calculateMovement()}px)`
                   }}
                 >
-                  {image_list.map((image, index) => (
+                  {imageList.map((img, idx) => (
                     <ActivityCard
-                      image={images[`${image}.jpg`]}
-                      title={image.replace(/[^a-zA-Z ]/g, " ")}
-                      key={index}
+                      onClickCard={() => this.handleClickActivityCard(img)}
+                      image={images[`${img}.jpg`]}
+                      title={this.getTitleTextFromImage(img)}
+                      key={`${img}-${idx}`}
                     />
                   ))}
+                </div>
+                <div className="flex centerize">
+                  <div
+                    className="detail-btn"
+                    onClick={() => this.handleClickActivityCard(currentImg)}
+                  >
+                    <p>More detail</p>
+                  </div>
                 </div>
               </div>
               <div className="flex centerize button-container">
@@ -173,5 +276,9 @@ class ActivitySection extends React.Component {
     );
   }
 }
+
+ActivitySection.propTypes = {
+  id: PropTypes.number
+};
 
 export default ActivitySection;

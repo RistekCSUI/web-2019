@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from "react";
 import { MainInfoContainer } from "./style";
 import MissionImg from "../../assets/mission.jpg";
