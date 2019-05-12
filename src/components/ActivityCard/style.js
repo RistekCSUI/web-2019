@@ -131,4 +131,10 @@ export const ActivityCardStyle = styled.div`
       }
     }
   }
+
+  @media (max-width: 450px) {
+    .activity-title {
+      margin-top: 1rem;
+    }
+  }
 `;
