@@ -56,7 +56,7 @@ export const AchievementContainer = styled.div`
     }
 
     .lower-title p {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 `;
