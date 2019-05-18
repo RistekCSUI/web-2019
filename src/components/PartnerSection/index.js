@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/prop-types */
 import React from "react";
 import { PartnerSectionContainer } from "./style";
@@ -6,11 +7,6 @@ import GojekLogo from "../../assets/gojek-logo.png";
 import GoAcademy from "../../assets/go-academy.png";
 
 class PartnerSection extends React.Component {
-  onClickGojekDetail = () => window.open("https://www.go-jek.com/", "_blank");
-
-  onClickAcademyDetail = () =>
-    window.open("https://www.go-jek.com/go-academy/", "_blank");
-
   render() {
     return (
       <PartnerSectionContainer>
@@ -31,11 +27,10 @@ class PartnerSection extends React.Component {
                   other service providers.
                 </p>
               </div>
-              <div
-                className="detail-btn"
-                onClick={() => this.onClickGojekDetail()}
-              >
-                <p>More detail</p>
+              <div className="detail-btn">
+                <a href="https://www.go-jek.com/" target="_blank">
+                  More detail
+                </a>
               </div>
             </div>
             <div className="desc-container">
@@ -50,11 +45,10 @@ class PartnerSection extends React.Component {
                   Fasilkom UI’s students.
                 </p>
               </div>
-              <div
-                className="detail-btn"
-                onClick={() => this.onClickAcademyDetail()}
-              >
-                <p>More detail</p>
+              <div className="detail-btn">
+                <a href="https://www.go-jek.com/go-academy/" target="_blank">
+                  More detail
+                </a>
               </div>
             </div>
           </div>
