@@ -157,6 +157,11 @@ export const ActivityModalStyle = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      .title-cont {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
     }
 
     .container {
@@ -188,50 +193,69 @@ export const ActivityModalStyle = styled.div`
       width: 35%;
       margin: 0;
     }
+  }
 
-    @media (max-width: 420px) {
-      h1 {
-        font-size: 36px;
-      }
-
-      p {
-        line-height: 1.4rem;
-      }
+  @media (max-width: 420px) {
+    h1 {
+      font-size: 30px;
     }
-
-    @media (max-width: 375px) {
-      .container {
-        padding-top: 4rem;
-      }
-      .detail-container {
-        padding-top: 0.8rem;
-        padding-bottom: 0.5rem;
-      }
-      .title-cont {
-        margin-top: 0rem;
-        margin-bottom: 0.2rem;
-      }
-      .close-mobile img {
-        width: 30px;
-        height: 30px;
-      }
-      .close-mobile {
-        top: 1.2rem;
-        right: 1rem;
-      }
-      h1 {
-        font-size: 28px;
-      }
-      p {
-        font-size: 14px;
-        line-height: 1.2rem;
-      }
+    p {
+      font-size: 14px;
+      line-height: 1.2rem;
     }
+    .close-mobile {
+      top: 1.2rem;
+      right: 1rem;
+    }
+    .close-mobile img {
+      width: 28px;
+      height: 28px;
+    }
+    .container {
+      padding-top: 4rem;
+    }
+    .buttons-cont {
+      padding-top: 0.5rem;
+      padding-bottom: 2.5rem;
+    }
+  }
 
-    @media (max-width: 330px) {
-      p {
-        font-size: 12px;
-      }
+  @media (max-width: 375px) {
+    .container {
+      padding: 3.5rem 1.2rem 1.2rem 1.2rem;
+    }
+    .close-mobile img {
+      width: 22px;
+      height: 22px;
+    }
+    .close-mobile {
+      top: 1rem;
+      right: 0.8rem;
+    }
+    .detail-container {
+      padding-top: 0.5rem;
+      padding-bottom: 0;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 1.1rem;
+    }
+    .buttons-cont {
+      padding-bottom: 1.5rem;
+    }
+    .move-button {
+      width: 25%;
+      font-size: 12px;
+      padding: 0.5rem 0.8rem;
+    }
+  }
+
+  @media (max-width: 330px) {
+    p {
+      font-size: 11px;
     }
   }
 `;
