@@ -6,9 +6,7 @@ export const HeaderContainer = styled.div`
   background: white;
   width: 100%;
 
-  ${'' /* -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1); */}
+  box-shadow: 0 5px 50px rgba(40, 40, 40, 0.15);
 
   .header-container {
     padding: 1rem 1rem 1rem 2rem;

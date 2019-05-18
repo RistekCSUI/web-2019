@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const PartnerSectionContainer = styled.div`
   width: 100%;
 
+  a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+  }
+
   .section-container {
     padding: 1rem 1rem 10rem 1rem;
   }
@@ -30,7 +36,7 @@ export const PartnerSectionContainer = styled.div`
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .upper-desc-container {
@@ -42,7 +48,8 @@ export const PartnerSectionContainer = styled.div`
     color: ${props => props.theme.colors.black};
   }
 
-  p {
+  p,
+  a {
     font-size: 22px;
     line-height: 2.2rem;
   }
@@ -53,20 +60,20 @@ export const PartnerSectionContainer = styled.div`
 
   .gojek-logo {
     width: 24rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .academy-logo {
     width: 34rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .detail-btn {
     background: ${props => props.theme.colors.black};
     color: #f9f9f9;
-    width: 8rem;
+    width: 7.5rem;
     text-align: center;
-    padding: 0.75rem 3.5rem 0.75rem 3.5rem;
+    padding: 0.75rem 3rem 0.75rem 3rem;
     font-size: 24px;
     margin-top: 2rem;
     cursor: pointer;
@@ -74,7 +81,7 @@ export const PartnerSectionContainer = styled.div`
 
   @media (max-width: 1440px) {
     .gojek-logo {
-      width: 21rem;
+      width: 21.5rem;
     }
 
     .academy-logo {
@@ -84,36 +91,40 @@ export const PartnerSectionContainer = styled.div`
 
   @media (max-width: 1360px) {
     .gojek-logo {
-      width: 20rem;
+      width: 21rem;
     }
 
     .academy-logo {
       width: 30rem;
     }
 
-    p {
-      font-size: 21px;
+    p,
+    a {
+      font-size: 20px;
+      line-height: 2rem;
+    }
+
+    .detail-btn {
+      padding: 0.5rem 2.5rem;
     }
   }
 
   @media (max-width: 1280px) {
     .gojek-logo {
-      width: 18rem;
-      margin-bottom: 1.5rem;
+      width: 19.5rem;
     }
 
     .academy-logo {
       width: 28rem;
-      margin-bottom: 1.5rem;
     }
 
-    p {
-      font-size: 20px;
+    p,
+    a {
+      font-size: 18px;
     }
 
     .detail-btn {
-      width: 8rem;
-      padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+      padding: 0.5rem 2.3rem 0.5rem 2.3rem;
     }
   }
 
@@ -122,14 +133,15 @@ export const PartnerSectionContainer = styled.div`
       font-size: 40px;
     }
     .gojek-logo {
-      width: 16rem;
+      width: 18.3rem;
     }
 
     .academy-logo {
       width: 26rem;
     }
 
-    p {
+    p,
+    a {
       font-size: 18px;
     }
 
@@ -156,15 +168,14 @@ export const PartnerSectionContainer = styled.div`
 
     .gojek-logo {
       width: 18rem;
-      margin-bottom: 1rem;
     }
 
     .academy-logo {
       width: 28rem;
-      margin-bottom: 0.5rem;
     }
 
-    p {
+    p,
+    a {
       font-size: 18px;
     }
 
@@ -172,7 +183,7 @@ export const PartnerSectionContainer = styled.div`
       width: 8rem;
       padding: 0.4rem 2rem;
 
-      p {
+      a {
         font-size: 16px;
       }
     }
@@ -193,13 +204,14 @@ export const PartnerSectionContainer = styled.div`
 
     p {
       font-size: 18px;
+      line-height: 1.8rem;
     }
 
     .detail-btn {
       width: 8rem;
       padding: 0.4rem 1.5rem 0.4rem 1.5rem;
 
-      p {
+      a {
         font-size: 16px;
       }
     }
@@ -225,9 +237,10 @@ export const PartnerSectionContainer = styled.div`
       width: 18rem;
     }
 
-    p {
+    p,
+    a {
       font-size: 16px;
-      line-height: 1.8rem;
+      line-height: 1.6rem;
     }
 
     .detail-btn {
