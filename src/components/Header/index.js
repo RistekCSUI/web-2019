@@ -89,18 +89,6 @@ class Header extends Component {
           </Link>
           <Link
             activeClass="active"
-            to="partner"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={1500}
-          >
-            <div className="menu" onClick={() => this.toggleExpandMobile()}>
-              <h3>Partner</h3>
-            </div>
-          </Link>
-          <Link
-            activeClass="active"
             to="activities"
             spy={true}
             smooth={true}
@@ -109,6 +97,18 @@ class Header extends Component {
           >
             <div className="menu" onClick={() => this.toggleExpandMobile()}>
               <h3>Activities</h3>
+            </div>
+          </Link>
+          <Link
+            activeClass="active"
+            to="partner"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1500}
+          >
+            <div className="menu" onClick={() => this.toggleExpandMobile()}>
+              <h3>Partner</h3>
             </div>
           </Link>
           <Link
@@ -167,18 +167,6 @@ class Header extends Component {
               </Link>
               <Link
                 activeClass="active"
-                to="partner"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={1500}
-              >
-                <div>
-                  <p>Partner</p>
-                </div>
-              </Link>
-              <Link
-                activeClass="active"
                 to="activities"
                 spy={true}
                 smooth={true}
@@ -187,6 +175,18 @@ class Header extends Component {
               >
                 <div>
                   <p>Activities</p>
+                </div>
+              </Link>
+              <Link
+                activeClass="active"
+                to="partner"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1500}
+              >
+                <div>
+                  <p>Partner</p>
                 </div>
               </Link>
               <Link
