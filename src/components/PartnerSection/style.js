@@ -10,7 +10,7 @@ export const PartnerSectionContainer = styled.div`
   }
 
   .section-container {
-    padding: 1rem 1rem 10rem 1rem;
+    padding: 4rem 1rem 10rem 1rem;
   }
 
   .title {
@@ -90,6 +90,9 @@ export const PartnerSectionContainer = styled.div`
   }
 
   @media (max-width: 1360px) {
+    .section-container {
+      padding-top: 3rem;
+    }
     .gojek-logo {
       width: 21rem;
     }
@@ -129,6 +132,9 @@ export const PartnerSectionContainer = styled.div`
   }
 
   @media (max-width: 1150px) {
+    .section-container {
+      padding-top: 2rem;
+    }
     .title h1 {
       font-size: 40px;
     }
@@ -152,7 +158,7 @@ export const PartnerSectionContainer = styled.div`
 
   @media (max-width: 980px) {
     .section-container {
-      padding: 1rem 2rem 10rem 2rem;
+      padding: 3rem 2rem 10rem 2rem;
     }
 
     .description {
@@ -223,7 +229,7 @@ export const PartnerSectionContainer = styled.div`
     }
 
     .section-container {
-      padding: 0rem 1rem 6rem 1rem;
+      padding: 2rem 1rem 6rem 1rem;
     }
     .desc-container {
       padding: 2rem 1.2rem 3rem 1.2rem;
