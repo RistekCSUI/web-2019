@@ -7,7 +7,7 @@ export const AchievementContainer = styled.div`
     justify-content: center;
     align-items: center;
     color: ${props => props.theme.colors.black};
-    margin: 5rem 0 5rem 0;
+    margin: 5rem 0 1rem 0;
     padding: 1rem;
   }
 
@@ -48,6 +48,7 @@ export const AchievementContainer = styled.div`
     .main {
       margin: 2rem 0;
       margin-top: 4rem;
+      margin-bottom: 0rem;
       padding: 0;
     }
 
