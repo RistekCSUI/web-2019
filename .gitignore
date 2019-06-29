@@ -26,3 +26,5 @@ env/
 .vscode/
 
 package-lock.json
+deploy.sh
+
