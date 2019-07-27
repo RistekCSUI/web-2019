@@ -66,8 +66,7 @@ export const BannerContainer = styled.div`
       position: absolute;
       bottom: 2rem;
       img {
-        margin-top: 1.5rem;
-        width: 90%;
+        width: 25%;
       }
     }
 
