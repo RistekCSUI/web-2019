@@ -42,6 +42,10 @@ class Header extends Component {
     }
   };
 
+  redirectToSusunJadwal = () => {
+    window.location.replace("https://ristek.cs.ui.ac.id/susunjadwal/");
+  };
+
   renderMenuMobile = () => {
     const isMobileMenuOpened = this.state.isExpandedMobile
       ? "mobile-menu-container"
@@ -123,6 +127,18 @@ class Header extends Component {
               <h3>Contact</h3>
             </div>
           </Link>
+          <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1500}
+            onClick={this.redirectToSusunJadwal}
+          >
+            <div className="menu" onClick={() => this.toggleExpandMobile()}>
+              <h3>Susun Jadwal</h3>
+            </div>
+          </Link>
         </div>
       </div>
     );
@@ -199,6 +215,18 @@ class Header extends Component {
               >
                 <div>
                   <p>Contact</p>
+                </div>
+              </Link>
+              <Link
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1500}
+                onClick={this.redirectToSusunJadwal}
+              >
+                <div>
+                  <p>Susun Jadwal</p>
                 </div>
               </Link>
             </div>

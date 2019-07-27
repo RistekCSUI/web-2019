@@ -154,6 +154,7 @@ export const HeaderContainer = styled.div`
 
     .mobile-menu-container {
       display: flex;
+      overflow: auto;
     }
 
     .menu {
