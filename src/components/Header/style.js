@@ -67,10 +67,10 @@ export const HeaderContainer = styled.div`
 
   .burger-menus {
     width: 100%;
-    height: 50%;
     display: flex;
     flex-direction: column;
     color: white;
+    margin-bottom: 5rem;
     display: none;
   }
 
