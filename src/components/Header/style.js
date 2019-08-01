@@ -89,6 +89,14 @@ export const HeaderContainer = styled.div`
     justify-content: space-between;
   }
 
+  .susunjadwal-header p {
+    color: #589f97;
+  }
+
+  .susunjadwal-menu h3 {
+    color: #fed48e;
+  }
+
   .hide {
     display: none;
   }

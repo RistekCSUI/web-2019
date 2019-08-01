@@ -135,7 +135,10 @@ class Header extends Component {
             duration={1500}
             onClick={this.redirectToSusunJadwal}
           >
-            <div className="menu" onClick={() => this.toggleExpandMobile()}>
+            <div
+              className="menu susunjadwal-menu"
+              onClick={() => this.toggleExpandMobile()}
+            >
               <h3>Susun Jadwal</h3>
             </div>
           </Link>
@@ -225,7 +228,7 @@ class Header extends Component {
                 duration={1500}
                 onClick={this.redirectToSusunJadwal}
               >
-                <div>
+                <div className="susunjadwal-header">
                   <p>Susun Jadwal</p>
                 </div>
               </Link>
