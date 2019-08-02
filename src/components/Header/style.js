@@ -67,10 +67,10 @@ export const HeaderContainer = styled.div`
 
   .burger-menus {
     width: 100%;
-    height: 50%;
     display: flex;
     flex-direction: column;
     color: white;
+    margin-bottom: 5rem;
     display: none;
   }
 
@@ -87,6 +87,14 @@ export const HeaderContainer = styled.div`
   .upper-burger {
     display: flex;
     justify-content: space-between;
+  }
+
+  .susunjadwal-header p {
+    color: #589f97;
+  }
+
+  .susunjadwal-menu h3 {
+    color: #fed48e;
   }
 
   .hide {
