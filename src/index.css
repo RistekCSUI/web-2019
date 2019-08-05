@@ -8,6 +8,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/PNovaRegular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/PNovaLight.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/PNovaBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
