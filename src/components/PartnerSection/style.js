@@ -65,7 +65,8 @@ export const PartnerSectionContainer = styled.div`
 
   .academy-logo {
     width: 34rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   .detail-btn {
@@ -143,6 +144,7 @@ export const PartnerSectionContainer = styled.div`
     }
 
     .academy-logo {
+      margin-top: 0.8rem;
       width: 26rem;
     }
 
@@ -178,6 +180,8 @@ export const PartnerSectionContainer = styled.div`
 
     .academy-logo {
       width: 28rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
     }
 
     p,
@@ -241,6 +245,7 @@ export const PartnerSectionContainer = styled.div`
 
     .academy-logo {
       width: 18rem;
+      margin-bottom: 1.2rem;
     }
 
     p,
