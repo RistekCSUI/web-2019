@@ -11,9 +11,6 @@ import { routes } from "./routes";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
-import Banner from "../../components/Banner";
-import RistekDivisionSection from "../../components/RistekDivisionSection";
-
 export class App extends React.Component {
   render() {
     const pages = routes.map((route, i) => (
