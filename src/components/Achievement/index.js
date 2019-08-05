@@ -32,7 +32,7 @@ class Achievement extends Component {
           <div className="main-body">
             <div className="lower-title">
               <p>
-                Our past members have also been hired to intern at excellent
+                Our past members have also been hired as interns at excellent
                 companies all over the world, some of them including:
               </p>
             </div>
