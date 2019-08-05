@@ -16,7 +16,7 @@ class Footer extends Component {
             <div className="upper">
               <div className="contact">
                 <h1>Contact us at</h1>
-                <a href="mailto:ristekfasilkomui@gmail.com" target="_blank">
+                <a href="mailto:ristek.ui@gmail.com" target="_blank">
                   ristek.ui@gmail.com
                 </a>
               </div>
